@@ -37,10 +37,12 @@ header{
     font-size:28px;
     font-weight:bold;
     letter-spacing:1px;
+    line-height:1;
 }
 
 nav ul{
     list-style:none;
+    align-items:center;
     display:flex;
     gap:30px;
 }
@@ -48,6 +50,7 @@ nav ul{
 nav li{
     position:relative;
     padding-bottom:25px;
+    align-items:center;
 }
 
 nav a{
@@ -56,6 +59,8 @@ nav a{
     font-weight:bold;
     padding:10px;
     transition:.3s;
+    height:70px;   
+    align-items:center;
 }
 
 nav a:hover{
@@ -80,6 +85,7 @@ nav a:hover{
     display:block;
     color:#123524;
     padding:12px 16px;
+    align-items:center;
 }
 
 .dropdown a:hover{
@@ -89,6 +95,7 @@ nav a:hover{
 
 nav li:hover .dropdown{
     display:block;
+    align-items:center;
 }
 
 /* ===== HERO ===== */
@@ -189,21 +196,24 @@ PORTIFOLIO
 <nav>
 <ul>
 
-<li><a href="index.html">Accueil</a></li>
+<li><a href="index.html">Home</a></li>
+
+<li><a href="aboutme.html">About Me</a>    </li>
 
 <li>
 
-<a href="#">Services ▼</a>
+<a href="experience.html">My Work Experience ▼</a>
 
 <div class="dropdown">
-<a href="service1.html">Service 1</a>
-<a href="service2.html">Service 2</a>
-<a href="service3.html">Service 3</a>
+<a href="CAD.html">CAD and 3D Modeling</a>
+<a href="SoftwareDev.html">Software Development</a>
+<a href="service3.html">Trackside Experience</a>
 </div>
 
 </li>
 
-<li><a href="actualites.html">Actualités</a></li>
+
+<li><a href="actualites.html">My Resume</a></li>
 
 <li><a href="contact.html">Contact</a></li>
 
@@ -214,23 +224,23 @@ PORTIFOLIO
 
 <section class="hero">
 
-<h1>Bienvenue</h1>
+<h1>Jean Wlodarczyk</h1>
 
 <p>
-Bienvenue sur mon portfolio. Cette page d'accueil constitue le point d'entrée
-vers l'ensemble de mes contenus. Utilisez le menu de navigation pour accéder
-aux différentes rubriques.
+Welcome to my portfolio. This page is a starting HUB towards 
+every relevant professional and voluntary experiences I may have, each illustrated with examples and documentation. To start
+exploring my profile, please click on the button below or on the dropdown menu!
 </p>
 
-<a class="button" href="services.html">
-Découvrir
+<a class="button" href="experience.html">
+Get to know my work
 </a>
 
 </section>
 
 <footer>
 
-© 2026 - MonSite
+© 2026 - Jean Wlodarczyk
 
 </footer>
 

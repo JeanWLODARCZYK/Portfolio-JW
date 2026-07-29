@@ -184,40 +184,26 @@ nav li:hover .dropdown{
 .hero p{
     font-size:18px;
 }
-
+}
 /* ====== Grille ====== */
 
 .grid-container{
-    width:90%;
-    max-width:1400px;
-    margin:60px auto;
-
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-}
-
-/* ====== Carte ====== */
-
-.card{
-
-    position:relative;
-
-    height:10px;
-
-    overflow:hidden;
-
-    border-radius:12px;
-
-    text-decoration:none;
-
     display:flex;
     justify-content:center;
-    align-items:center;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
-
+    gap:20px;
+    flex-wrap:wrap;
 }
+
+.card{
+    width: 30vh;
+    text-align: center;
+    aspect-ratio:1 / 1;
+    position:relative;
+    overflow:hidden;
+    text-decoration:none;
+    color:white;
+}
+
 
 /* ====== Image ====== */
 
@@ -226,10 +212,10 @@ nav li:hover .dropdown{
     position:absolute;
     inset:0;
 
-    width:10%;
-    height:10%;
-
+    width:100%;
+    height:100%;
     object-fit:cover;
+    object-position:center;
 
     filter:grayscale(100%);
     transform:scale(1);
@@ -262,9 +248,13 @@ nav li:hover .dropdown{
 
     color:white;
 
-    font-size:4rem;
+    font-size:30px;
+    text-align: center;
+    vertical-align: middle;
+    object-position:center;
+    letter-spacing:3px;
+    width : 30vh;
 
-    letter-spacing:4px;
 
     z-index:2;
 
@@ -295,6 +285,12 @@ nav li:hover .dropdown{
 
 }
 
+.card,
+.card:visited,
+.card:hover,
+.card:active{
+    text-decoration:none;
+    color:white;
 }
 
 }
@@ -315,7 +311,7 @@ Jean Wlodarczyk
 
 <li><a href="../index.html">Home</a></li>
 
-<li><a href="pages/aboutme.html">About Me</a>    </li>
+<li><a href="aboutme.html">About Me</a>    </li>
 
 <li>
 
@@ -343,32 +339,31 @@ Jean Wlodarczyk
 <section class="hero">
 
 
-<main class="grid-container">
+<div class="grid-container">
 
     <a href="../subpages/DIL.html" class="card">
         <img src="../images/a.PNG" alt="">
         <div class="overlay"></div>
-        <h2>A</h2>
+        <h2>   DIL </h2>
     </a>
 
     <a href="../subpages/CAD.html" class="card">
         <img src="../images/b.PNG" alt="">
         <div class="overlay"></div>
-        <h2>B</h2>
+        <h2>    CAD </h2>
     </a>
-
     <a href="../subpages/softwareDev.html" class="card">
         <img src="../images/c.PNG" alt="">
         <div class="overlay"></div>
-        <h2>C</h2>
+        <h2>  SOFTWARE </h2>
     </a>
 
     <a href="../subpages/trackside.html" class="card">
         <img src="../images/d.PNG" alt="">
         <div class="overlay"></div>
-        <h2>D</h2>
+        <h2>   TRACKSIDE </h2>
     </a>
-
+</div>
 </main>
 
 </section>

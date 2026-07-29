@@ -185,6 +185,118 @@ nav li:hover .dropdown{
     font-size:18px;
 }
 
+/* ====== Grille ====== */
+
+.grid-container{
+    width:90%;
+    max-width:1400px;
+    margin:60px auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+/* ====== Carte ====== */
+
+.card{
+
+    position:relative;
+
+    height:10px;
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+/* ====== Image ====== */
+
+.card img{
+
+    position:absolute;
+    inset:0;
+
+    width:10%;
+    height:10%;
+
+    object-fit:cover;
+
+    filter:grayscale(100%);
+    transform:scale(1);
+
+    transition:
+        transform .4s ease,
+        filter .4s ease;
+
+}
+
+/* ====== Couche colorée ====== */
+
+.overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:#123524;
+    opacity:.35;
+
+    transition:.4s;
+
+}
+
+/* ====== Texte ====== */
+
+.card h2{
+
+    position:relative;
+
+    color:white;
+
+    font-size:4rem;
+
+    letter-spacing:4px;
+
+    z-index:2;
+
+}
+
+/* ====== Hover ====== */
+
+.card:hover img{
+
+    filter:grayscale(0%);
+    transform:scale(1.1);
+
+}
+
+.card:hover .overlay{
+
+    opacity:0;
+
+}
+
+/* ====== Responsive ====== */
+
+@media(max-width:900px){
+
+.grid-container{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
 }
 
 </style>
@@ -207,21 +319,21 @@ Jean Wlodarczyk
 
 <li>
 
-<a href="pages/experience.html">My Work Experience ▼</a>
+<a href="experience.html">My Work Experience ▼</a>
 
 <div class="dropdown">
-<a href="subpages/DIL.html">Driver In The Loop</a>
-<a href="subpages/softwareDev.html">Software Development</a>
-<a href="subpages/trackside.html">Trackside Experience</a>
-<a href="subpages/CAD.html">CAD & 3D Modeling</a>
+<a href="../subpages/DIL.html">Driver In The Loop</a>
+<a href="../subpages/softwareDev.html">Software Development</a>
+<a href="../subpages/trackside.html">Trackside Experience</a>
+<a href="../subpages/CAD.html">CAD & 3D Modeling</a>
 </div>
 
 </li>
 
 
-<li><a href="resume/jw_resume.pdf">My Resume</a></li>
+<li><a href="../resume/jw_resume.pdf">My Resume</a></li>
 
-<li><a href="pages/contact.html">Contact</a></li>
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 </nav>
@@ -230,6 +342,34 @@ Jean Wlodarczyk
 
 <section class="hero">
 
+
+<main class="grid-container">
+
+    <a href="../subpages/DIL.html" class="card">
+        <img src="../images/a.PNG" alt="">
+        <div class="overlay"></div>
+        <h2>A</h2>
+    </a>
+
+    <a href="../subpages/CAD.html" class="card">
+        <img src="../images/b.PNG" alt="">
+        <div class="overlay"></div>
+        <h2>B</h2>
+    </a>
+
+    <a href="../subpages/softwareDev.html" class="card">
+        <img src="../images/c.PNG" alt="">
+        <div class="overlay"></div>
+        <h2>C</h2>
+    </a>
+
+    <a href="../subpages/trackside.html" class="card">
+        <img src="../images/d.PNG" alt="">
+        <div class="overlay"></div>
+        <h2>D</h2>
+    </a>
+
+</main>
 
 </section>
 
